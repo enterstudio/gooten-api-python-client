@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -70,34 +68,19 @@ class PostSubmittedItem(object):
             'shipments': 'Shipments'
         }
 
-
         self._sku = None
-
         self._product_id = None
-
         self._product = None
-
         self._quantity = None
-
         self._status = None
-
         self._tracking_number = None
-
         self._tracking_url = None
-
         self._ship_carrier_name = None
-
         self._price = None
-
         self._discount_amount = None
-
         self._source_id = None
-
         self._meta = None
-
         self._shipments = None
-
-
 
     @property
     def sku(self):
@@ -121,7 +104,6 @@ class PostSubmittedItem(object):
         """
         self._sku = sku
 
-
     @property
     def product_id(self):
         """
@@ -143,7 +125,6 @@ class PostSubmittedItem(object):
         :type: int
         """
         self._product_id = product_id
-
 
     @property
     def product(self):
@@ -167,7 +148,6 @@ class PostSubmittedItem(object):
         """
         self._product = product
 
-
     @property
     def quantity(self):
         """
@@ -189,7 +169,6 @@ class PostSubmittedItem(object):
         :type: int
         """
         self._quantity = quantity
-
 
     @property
     def status(self):
@@ -213,7 +192,6 @@ class PostSubmittedItem(object):
         """
         self._status = status
 
-
     @property
     def tracking_number(self):
         """
@@ -235,7 +213,6 @@ class PostSubmittedItem(object):
         :type: str
         """
         self._tracking_number = tracking_number
-
 
     @property
     def tracking_url(self):
@@ -259,7 +236,6 @@ class PostSubmittedItem(object):
         """
         self._tracking_url = tracking_url
 
-
     @property
     def ship_carrier_name(self):
         """
@@ -281,7 +257,6 @@ class PostSubmittedItem(object):
         :type: str
         """
         self._ship_carrier_name = ship_carrier_name
-
 
     @property
     def price(self):
@@ -305,7 +280,6 @@ class PostSubmittedItem(object):
         """
         self._price = price
 
-
     @property
     def discount_amount(self):
         """
@@ -327,7 +301,6 @@ class PostSubmittedItem(object):
         :type: ProductPriceInfo
         """
         self._discount_amount = discount_amount
-
 
     @property
     def source_id(self):
@@ -351,7 +324,6 @@ class PostSubmittedItem(object):
         """
         self._source_id = source_id
 
-
     @property
     def meta(self):
         """
@@ -374,7 +346,6 @@ class PostSubmittedItem(object):
         """
         self._meta = meta
 
-
     @property
     def shipments(self):
         """
@@ -396,7 +367,6 @@ class PostSubmittedItem(object):
         :type: list[Shipment]
         """
         self._shipments = shipments
-
 
     def to_dict(self):
         """
@@ -447,6 +417,4 @@ class PostSubmittedItem(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

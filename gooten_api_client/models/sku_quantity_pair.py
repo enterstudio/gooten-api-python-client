@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -48,12 +46,8 @@ class SkuQuantityPair(object):
             'quantity': 'Quantity'
         }
 
-
         self._sku = None
-
         self._quantity = None
-
-
 
     @property
     def sku(self):
@@ -77,7 +71,6 @@ class SkuQuantityPair(object):
         """
         self._sku = sku
 
-
     @property
     def quantity(self):
         """
@@ -99,7 +92,6 @@ class SkuQuantityPair(object):
         :type: int
         """
         self._quantity = quantity
-
 
     def to_dict(self):
         """
@@ -150,6 +142,4 @@ class SkuQuantityPair(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

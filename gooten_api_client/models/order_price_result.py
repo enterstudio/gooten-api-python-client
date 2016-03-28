@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -64,28 +62,16 @@ class OrderPriceResult(object):
             'had_error': 'HadError'
         }
 
-
         self._items = None
-
         self._shipping = None
-
         self._tax = None
-
         self._coupon_code = None
-
         self._coupon_type = None
-
         self._coupon_used = None
-
         self._had_coupon_apply = None
-
         self._dollars_off = None
-
         self._percent_off = None
-
         self._had_error = None
-
-
 
     @property
     def items(self):
@@ -109,7 +95,6 @@ class OrderPriceResult(object):
         """
         self._items = items
 
-
     @property
     def shipping(self):
         """
@@ -131,7 +116,6 @@ class OrderPriceResult(object):
         :type: PriceInfo
         """
         self._shipping = shipping
-
 
     @property
     def tax(self):
@@ -155,7 +139,6 @@ class OrderPriceResult(object):
         """
         self._tax = tax
 
-
     @property
     def coupon_code(self):
         """
@@ -177,7 +160,6 @@ class OrderPriceResult(object):
         :type: PriceInfo
         """
         self._coupon_code = coupon_code
-
 
     @property
     def coupon_type(self):
@@ -201,7 +183,6 @@ class OrderPriceResult(object):
         """
         self._coupon_type = coupon_type
 
-
     @property
     def coupon_used(self):
         """
@@ -223,7 +204,6 @@ class OrderPriceResult(object):
         :type: str
         """
         self._coupon_used = coupon_used
-
 
     @property
     def had_coupon_apply(self):
@@ -247,7 +227,6 @@ class OrderPriceResult(object):
         """
         self._had_coupon_apply = had_coupon_apply
 
-
     @property
     def dollars_off(self):
         """
@@ -269,7 +248,6 @@ class OrderPriceResult(object):
         :type: int
         """
         self._dollars_off = dollars_off
-
 
     @property
     def percent_off(self):
@@ -293,7 +271,6 @@ class OrderPriceResult(object):
         """
         self._percent_off = percent_off
 
-
     @property
     def had_error(self):
         """
@@ -315,7 +292,6 @@ class OrderPriceResult(object):
         :type: bool
         """
         self._had_error = had_error
-
 
     def to_dict(self):
         """
@@ -366,6 +342,4 @@ class OrderPriceResult(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

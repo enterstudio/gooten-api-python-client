@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -48,12 +46,8 @@ class ProductVariantResponse(object):
             'options': 'Options'
         }
 
-
         self._product_variants = None
-
         self._options = None
-
-
 
     @property
     def product_variants(self):
@@ -77,7 +71,6 @@ class ProductVariantResponse(object):
         """
         self._product_variants = product_variants
 
-
     @property
     def options(self):
         """
@@ -99,7 +92,6 @@ class ProductVariantResponse(object):
         :type: list[ProductOptionList]
         """
         self._options = options
-
 
     def to_dict(self):
         """
@@ -150,6 +142,4 @@ class ProductVariantResponse(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

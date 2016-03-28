@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -62,26 +60,15 @@ class SearchSubmittedOrder(object):
             'meta': 'Meta'
         }
 
-
         self._id = None
-
         self._nice_id = None
-
         self._source_id = None
-
         self._items = None
-
         self._total = None
-
         self._shipping_total = None
-
         self._discount_code = None
-
         self._discount_amount = None
-
         self._meta = None
-
-
 
     @property
     def id(self):
@@ -105,7 +92,6 @@ class SearchSubmittedOrder(object):
         """
         self._id = id
 
-
     @property
     def nice_id(self):
         """
@@ -127,7 +113,6 @@ class SearchSubmittedOrder(object):
         :type: str
         """
         self._nice_id = nice_id
-
 
     @property
     def source_id(self):
@@ -151,7 +136,6 @@ class SearchSubmittedOrder(object):
         """
         self._source_id = source_id
 
-
     @property
     def items(self):
         """
@@ -173,7 +157,6 @@ class SearchSubmittedOrder(object):
         :type: list[PostSubmittedItem]
         """
         self._items = items
-
 
     @property
     def total(self):
@@ -197,7 +180,6 @@ class SearchSubmittedOrder(object):
         """
         self._total = total
 
-
     @property
     def shipping_total(self):
         """
@@ -219,7 +201,6 @@ class SearchSubmittedOrder(object):
         :type: ProductPriceInfo
         """
         self._shipping_total = shipping_total
-
 
     @property
     def discount_code(self):
@@ -243,7 +224,6 @@ class SearchSubmittedOrder(object):
         """
         self._discount_code = discount_code
 
-
     @property
     def discount_amount(self):
         """
@@ -266,7 +246,6 @@ class SearchSubmittedOrder(object):
         """
         self._discount_amount = discount_amount
 
-
     @property
     def meta(self):
         """
@@ -288,7 +267,6 @@ class SearchSubmittedOrder(object):
         :type: Meta
         """
         self._meta = meta
-
 
     def to_dict(self):
         """
@@ -339,6 +317,4 @@ class SearchSubmittedOrder(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

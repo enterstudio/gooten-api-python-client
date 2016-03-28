@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -46,10 +44,7 @@ class CountryList(object):
             'countries': 'Countries'
         }
 
-
         self._countries = None
-
-
 
     @property
     def countries(self):
@@ -72,7 +67,6 @@ class CountryList(object):
         :type: list[Country]
         """
         self._countries = countries
-
 
     def to_dict(self):
         """
@@ -123,6 +117,4 @@ class CountryList(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

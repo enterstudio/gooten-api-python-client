@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -62,26 +60,15 @@ class ProductOption(object):
             'sort_value': 'SortValue'
         }
 
-
         self._option_id = None
-
         self._value_id = None
-
         self._name = None
-
         self._value = None
-
         self._image_url = None
-
         self._image_type = None
-
         self._rgba_color = None
-
         self._cm_value = None
-
         self._sort_value = None
-
-
 
     @property
     def option_id(self):
@@ -105,7 +92,6 @@ class ProductOption(object):
         """
         self._option_id = option_id
 
-
     @property
     def value_id(self):
         """
@@ -127,7 +113,6 @@ class ProductOption(object):
         :type: str
         """
         self._value_id = value_id
-
 
     @property
     def name(self):
@@ -151,7 +136,6 @@ class ProductOption(object):
         """
         self._name = name
 
-
     @property
     def value(self):
         """
@@ -173,7 +157,6 @@ class ProductOption(object):
         :type: str
         """
         self._value = value
-
 
     @property
     def image_url(self):
@@ -197,7 +180,6 @@ class ProductOption(object):
         """
         self._image_url = image_url
 
-
     @property
     def image_type(self):
         """
@@ -219,7 +201,6 @@ class ProductOption(object):
         :type: str
         """
         self._image_type = image_type
-
 
     @property
     def rgba_color(self):
@@ -243,7 +224,6 @@ class ProductOption(object):
         """
         self._rgba_color = rgba_color
 
-
     @property
     def cm_value(self):
         """
@@ -266,7 +246,6 @@ class ProductOption(object):
         """
         self._cm_value = cm_value
 
-
     @property
     def sort_value(self):
         """
@@ -288,7 +267,6 @@ class ProductOption(object):
         :type: str
         """
         self._sort_value = sort_value
-
 
     def to_dict(self):
         """
@@ -339,6 +317,4 @@ class ProductOption(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

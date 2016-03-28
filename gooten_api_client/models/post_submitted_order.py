@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -66,30 +64,17 @@ class PostSubmittedOrder(object):
             'meta': 'Meta'
         }
 
-
         self._id = None
-
         self._nice_id = None
-
         self._souce_id = None
-
         self._items = None
-
         self._total = None
-
         self._shipping_total = None
-
         self._discount_amount = None
-
         self._discount_code = None
-
         self._billing_address = None
-
         self._shipping_address = None
-
         self._meta = None
-
-
 
     @property
     def id(self):
@@ -113,7 +98,6 @@ class PostSubmittedOrder(object):
         """
         self._id = id
 
-
     @property
     def nice_id(self):
         """
@@ -135,7 +119,6 @@ class PostSubmittedOrder(object):
         :type: str
         """
         self._nice_id = nice_id
-
 
     @property
     def souce_id(self):
@@ -159,7 +142,6 @@ class PostSubmittedOrder(object):
         """
         self._souce_id = souce_id
 
-
     @property
     def items(self):
         """
@@ -181,7 +163,6 @@ class PostSubmittedOrder(object):
         :type: list[PostSubmittedItem]
         """
         self._items = items
-
 
     @property
     def total(self):
@@ -205,7 +186,6 @@ class PostSubmittedOrder(object):
         """
         self._total = total
 
-
     @property
     def shipping_total(self):
         """
@@ -227,7 +207,6 @@ class PostSubmittedOrder(object):
         :type: ProductPriceInfo
         """
         self._shipping_total = shipping_total
-
 
     @property
     def discount_amount(self):
@@ -251,7 +230,6 @@ class PostSubmittedOrder(object):
         """
         self._discount_amount = discount_amount
 
-
     @property
     def discount_code(self):
         """
@@ -273,7 +251,6 @@ class PostSubmittedOrder(object):
         :type: str
         """
         self._discount_code = discount_code
-
 
     @property
     def billing_address(self):
@@ -297,7 +274,6 @@ class PostSubmittedOrder(object):
         """
         self._billing_address = billing_address
 
-
     @property
     def shipping_address(self):
         """
@@ -320,7 +296,6 @@ class PostSubmittedOrder(object):
         """
         self._shipping_address = shipping_address
 
-
     @property
     def meta(self):
         """
@@ -342,7 +317,6 @@ class PostSubmittedOrder(object):
         :type: Meta
         """
         self._meta = meta
-
 
     def to_dict(self):
         """
@@ -393,6 +367,4 @@ class PostSubmittedOrder(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -50,14 +48,9 @@ class Shipment(object):
             'ship_carrier_name': 'ShipCarrierName'
         }
 
-
         self._tracking_number = None
-
         self._tracking_url = None
-
         self._ship_carrier_name = None
-
-
 
     @property
     def tracking_number(self):
@@ -81,7 +74,6 @@ class Shipment(object):
         """
         self._tracking_number = tracking_number
 
-
     @property
     def tracking_url(self):
         """
@@ -104,7 +96,6 @@ class Shipment(object):
         """
         self._tracking_url = tracking_url
 
-
     @property
     def ship_carrier_name(self):
         """
@@ -126,7 +117,6 @@ class Shipment(object):
         :type: str
         """
         self._ship_carrier_name = ship_carrier_name
-
 
     def to_dict(self):
         """
@@ -177,6 +167,4 @@ class Shipment(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

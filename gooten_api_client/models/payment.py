@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -46,10 +44,7 @@ class Payment(object):
             'currency_code': 'CurrencyCode'
         }
 
-
         self._currency_code = None
-
-
 
     @property
     def currency_code(self):
@@ -72,7 +67,6 @@ class Payment(object):
         :type: str
         """
         self._currency_code = currency_code
-
 
     def to_dict(self):
         """
@@ -123,6 +117,4 @@ class Payment(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

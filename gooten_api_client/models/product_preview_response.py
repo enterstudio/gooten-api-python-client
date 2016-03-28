@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -50,14 +48,9 @@ class ProductPreviewResponse(object):
             'error_message': 'ErrorMessage'
         }
 
-
         self._url = None
-
         self._had_error = None
-
         self._error_message = None
-
-
 
     @property
     def url(self):
@@ -81,7 +74,6 @@ class ProductPreviewResponse(object):
         """
         self._url = url
 
-
     @property
     def had_error(self):
         """
@@ -104,7 +96,6 @@ class ProductPreviewResponse(object):
         """
         self._had_error = had_error
 
-
     @property
     def error_message(self):
         """
@@ -126,7 +117,6 @@ class ProductPreviewResponse(object):
         :type: str
         """
         self._error_message = error_message
-
 
     def to_dict(self):
         """
@@ -177,6 +167,4 @@ class ProductPreviewResponse(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

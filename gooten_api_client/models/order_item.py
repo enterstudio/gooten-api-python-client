@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -52,16 +50,10 @@ class OrderItem(object):
             'images': 'Images'
         }
 
-
         self._quantity = None
-
         self._sku = None
-
         self._ship_carrier_method_id = None
-
         self._images = None
-
-
 
     @property
     def quantity(self):
@@ -85,7 +77,6 @@ class OrderItem(object):
         """
         self._quantity = quantity
 
-
     @property
     def sku(self):
         """
@@ -107,7 +98,6 @@ class OrderItem(object):
         :type: str
         """
         self._sku = sku
-
 
     @property
     def ship_carrier_method_id(self):
@@ -131,7 +121,6 @@ class OrderItem(object):
         """
         self._ship_carrier_method_id = ship_carrier_method_id
 
-
     @property
     def images(self):
         """
@@ -153,7 +142,6 @@ class OrderItem(object):
         :type: list[OrderItemImage]
         """
         self._images = images
-
 
     def to_dict(self):
         """
@@ -204,6 +192,4 @@ class OrderItem(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

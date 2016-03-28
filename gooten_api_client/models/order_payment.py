@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -58,22 +56,13 @@ class OrderPayment(object):
             'currency_code': 'CurrencyCode'
         }
 
-
         self._braintree_encrypted_cc_number = None
-
         self._braintree_encrypted_cc_exp_date = None
-
         self._braintree_encrypted_ccv = None
-
         self._braintree_payment_nonce = None
-
         self._partner_billing_key = None
-
         self._total = None
-
         self._currency_code = None
-
-
 
     @property
     def braintree_encrypted_cc_number(self):
@@ -97,7 +86,6 @@ class OrderPayment(object):
         """
         self._braintree_encrypted_cc_number = braintree_encrypted_cc_number
 
-
     @property
     def braintree_encrypted_cc_exp_date(self):
         """
@@ -119,7 +107,6 @@ class OrderPayment(object):
         :type: str
         """
         self._braintree_encrypted_cc_exp_date = braintree_encrypted_cc_exp_date
-
 
     @property
     def braintree_encrypted_ccv(self):
@@ -143,7 +130,6 @@ class OrderPayment(object):
         """
         self._braintree_encrypted_ccv = braintree_encrypted_ccv
 
-
     @property
     def braintree_payment_nonce(self):
         """
@@ -165,7 +151,6 @@ class OrderPayment(object):
         :type: str
         """
         self._braintree_payment_nonce = braintree_payment_nonce
-
 
     @property
     def partner_billing_key(self):
@@ -189,7 +174,6 @@ class OrderPayment(object):
         """
         self._partner_billing_key = partner_billing_key
 
-
     @property
     def total(self):
         """
@@ -212,7 +196,6 @@ class OrderPayment(object):
         """
         self._total = total
 
-
     @property
     def currency_code(self):
         """
@@ -234,7 +217,6 @@ class OrderPayment(object):
         :type: str
         """
         self._currency_code = currency_code
-
 
     def to_dict(self):
         """
@@ -285,6 +267,4 @@ class OrderPayment(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

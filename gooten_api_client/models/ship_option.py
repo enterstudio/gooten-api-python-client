@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -62,26 +60,15 @@ class ShipOption(object):
             'est_business_days_til_delivery': 'EstBusinessDaysTilDelivery'
         }
 
-
         self._id = None
-
         self._method_type = None
-
         self._method_id = None
-
         self._name = None
-
         self._carrier_name = None
-
         self._carrier_logo_url = None
-
         self._price = None
-
         self._partner_price = None
-
         self._est_business_days_til_delivery = None
-
-
 
     @property
     def id(self):
@@ -105,7 +92,6 @@ class ShipOption(object):
         """
         self._id = id
 
-
     @property
     def method_type(self):
         """
@@ -127,7 +113,6 @@ class ShipOption(object):
         :type: str
         """
         self._method_type = method_type
-
 
     @property
     def method_id(self):
@@ -151,7 +136,6 @@ class ShipOption(object):
         """
         self._method_id = method_id
 
-
     @property
     def name(self):
         """
@@ -173,7 +157,6 @@ class ShipOption(object):
         :type: str
         """
         self._name = name
-
 
     @property
     def carrier_name(self):
@@ -197,7 +180,6 @@ class ShipOption(object):
         """
         self._carrier_name = carrier_name
 
-
     @property
     def carrier_logo_url(self):
         """
@@ -219,7 +201,6 @@ class ShipOption(object):
         :type: str
         """
         self._carrier_logo_url = carrier_logo_url
-
 
     @property
     def price(self):
@@ -243,7 +224,6 @@ class ShipOption(object):
         """
         self._price = price
 
-
     @property
     def partner_price(self):
         """
@@ -266,7 +246,6 @@ class ShipOption(object):
         """
         self._partner_price = partner_price
 
-
     @property
     def est_business_days_til_delivery(self):
         """
@@ -288,7 +267,6 @@ class ShipOption(object):
         :type: int
         """
         self._est_business_days_til_delivery = est_business_days_til_delivery
-
 
     def to_dict(self):
         """
@@ -339,6 +317,4 @@ class ShipOption(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

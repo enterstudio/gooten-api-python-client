@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -48,12 +46,8 @@ class PaymentValidationRequest(object):
             'pay_pal_key': 'PayPalKey'
         }
 
-
         self._order_id = None
-
         self._pay_pal_key = None
-
-
 
     @property
     def order_id(self):
@@ -77,7 +71,6 @@ class PaymentValidationRequest(object):
         """
         self._order_id = order_id
 
-
     @property
     def pay_pal_key(self):
         """
@@ -99,7 +92,6 @@ class PaymentValidationRequest(object):
         :type: str
         """
         self._pay_pal_key = pay_pal_key
-
 
     def to_dict(self):
         """
@@ -150,6 +142,4 @@ class PaymentValidationRequest(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

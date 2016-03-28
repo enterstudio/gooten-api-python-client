@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -56,20 +54,12 @@ class Country(object):
             'default_currency': 'DefaultCurrency'
         }
 
-
         self._name = None
-
         self._code = None
-
         self._is_supported = None
-
         self._measurement_code = None
-
         self._flag_url = None
-
         self._default_currency = None
-
-
 
     @property
     def name(self):
@@ -93,7 +83,6 @@ class Country(object):
         """
         self._name = name
 
-
     @property
     def code(self):
         """
@@ -115,7 +104,6 @@ class Country(object):
         :type: str
         """
         self._code = code
-
 
     @property
     def is_supported(self):
@@ -139,7 +127,6 @@ class Country(object):
         """
         self._is_supported = is_supported
 
-
     @property
     def measurement_code(self):
         """
@@ -161,7 +148,6 @@ class Country(object):
         :type: str
         """
         self._measurement_code = measurement_code
-
 
     @property
     def flag_url(self):
@@ -185,7 +171,6 @@ class Country(object):
         """
         self._flag_url = flag_url
 
-
     @property
     def default_currency(self):
         """
@@ -207,7 +192,6 @@ class Country(object):
         :type: Currency
         """
         self._default_currency = default_currency
-
 
     def to_dict(self):
         """
@@ -258,6 +242,4 @@ class Country(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -52,16 +50,10 @@ class ProductInfo(object):
             'index': 'Index'
         }
 
-
         self._content_type = None
-
         self._content = None
-
         self._key = None
-
         self._index = None
-
-
 
     @property
     def content_type(self):
@@ -85,7 +77,6 @@ class ProductInfo(object):
         """
         self._content_type = content_type
 
-
     @property
     def content(self):
         """
@@ -107,7 +98,6 @@ class ProductInfo(object):
         :type: list[str]
         """
         self._content = content
-
 
     @property
     def key(self):
@@ -131,7 +121,6 @@ class ProductInfo(object):
         """
         self._key = key
 
-
     @property
     def index(self):
         """
@@ -153,7 +142,6 @@ class ProductInfo(object):
         :type: int
         """
         self._index = index
-
 
     def to_dict(self):
         """
@@ -204,6 +192,4 @@ class ProductInfo(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

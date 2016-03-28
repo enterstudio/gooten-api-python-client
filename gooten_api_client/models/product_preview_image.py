@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -48,12 +46,8 @@ class ProductPreviewImage(object):
             'image': 'Image'
         }
 
-
         self._layer_id = None
-
         self._image = None
-
-
 
     @property
     def layer_id(self):
@@ -77,7 +71,6 @@ class ProductPreviewImage(object):
         """
         self._layer_id = layer_id
 
-
     @property
     def image(self):
         """
@@ -99,7 +92,6 @@ class ProductPreviewImage(object):
         :type: ProductPreviewImageSpec
         """
         self._image = image
-
 
     def to_dict(self):
         """
@@ -150,6 +142,4 @@ class ProductPreviewImage(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

@@ -70,4 +70,3 @@ from .submitted_order import SubmittedOrder
 from .submitted_order_list import SubmittedOrderList
 from .user_info import UserInfo
 from .validation_failure import ValidationFailure
-

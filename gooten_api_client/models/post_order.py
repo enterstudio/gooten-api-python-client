@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -60,24 +58,14 @@ class PostOrder(object):
             'meta': 'Meta'
         }
 
-
         self._ship_to_address = None
-
         self._billing_address = None
-
         self._items = None
-
         self._payment = None
-
         self._source_id = None
-
         self._is_pre_submit = None
-
         self._coupon_code = None
-
         self._meta = None
-
-
 
     @property
     def ship_to_address(self):
@@ -101,7 +89,6 @@ class PostOrder(object):
         """
         self._ship_to_address = ship_to_address
 
-
     @property
     def billing_address(self):
         """
@@ -123,7 +110,6 @@ class PostOrder(object):
         :type: ShipToAddress
         """
         self._billing_address = billing_address
-
 
     @property
     def items(self):
@@ -147,7 +133,6 @@ class PostOrder(object):
         """
         self._items = items
 
-
     @property
     def payment(self):
         """
@@ -169,7 +154,6 @@ class PostOrder(object):
         :type: OrderPayment
         """
         self._payment = payment
-
 
     @property
     def source_id(self):
@@ -193,7 +177,6 @@ class PostOrder(object):
         """
         self._source_id = source_id
 
-
     @property
     def is_pre_submit(self):
         """
@@ -215,7 +198,6 @@ class PostOrder(object):
         :type: bool
         """
         self._is_pre_submit = is_pre_submit
-
 
     @property
     def coupon_code(self):
@@ -239,7 +221,6 @@ class PostOrder(object):
         """
         self._coupon_code = coupon_code
 
-
     @property
     def meta(self):
         """
@@ -261,7 +242,6 @@ class PostOrder(object):
         :type: Meta
         """
         self._meta = meta
-
 
     def to_dict(self):
         """
@@ -312,6 +292,4 @@ class PostOrder(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

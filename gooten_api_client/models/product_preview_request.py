@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -54,18 +52,11 @@ class ProductPreviewRequest(object):
             'max_width': 'MaxWidth'
         }
 
-
         self._sku = None
-
         self._template = None
-
         self._images = None
-
         self._max_height = None
-
         self._max_width = None
-
-
 
     @property
     def sku(self):
@@ -89,7 +80,6 @@ class ProductPreviewRequest(object):
         """
         self._sku = sku
 
-
     @property
     def template(self):
         """
@@ -111,7 +101,6 @@ class ProductPreviewRequest(object):
         :type: str
         """
         self._template = template
-
 
     @property
     def images(self):
@@ -135,7 +124,6 @@ class ProductPreviewRequest(object):
         """
         self._images = images
 
-
     @property
     def max_height(self):
         """
@@ -158,7 +146,6 @@ class ProductPreviewRequest(object):
         """
         self._max_height = max_height
 
-
     @property
     def max_width(self):
         """
@@ -180,7 +167,6 @@ class ProductPreviewRequest(object):
         :type: int
         """
         self._max_width = max_width
-
 
     def to_dict(self):
         """
@@ -231,6 +217,4 @@ class ProductPreviewRequest(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

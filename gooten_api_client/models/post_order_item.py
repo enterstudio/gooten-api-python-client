@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -58,22 +56,13 @@ class PostOrderItem(object):
             'meta': 'Meta'
         }
 
-
         self._quantity = None
-
         self._sku = None
-
         self._ship_carrier_method_id = None
-
         self._ship_type = None
-
         self._images = None
-
         self._source_id = None
-
         self._meta = None
-
-
 
     @property
     def quantity(self):
@@ -97,7 +86,6 @@ class PostOrderItem(object):
         """
         self._quantity = quantity
 
-
     @property
     def sku(self):
         """
@@ -119,7 +107,6 @@ class PostOrderItem(object):
         :type: str
         """
         self._sku = sku
-
 
     @property
     def ship_carrier_method_id(self):
@@ -143,7 +130,6 @@ class PostOrderItem(object):
         """
         self._ship_carrier_method_id = ship_carrier_method_id
 
-
     @property
     def ship_type(self):
         """
@@ -165,7 +151,6 @@ class PostOrderItem(object):
         :type: str
         """
         self._ship_type = ship_type
-
 
     @property
     def images(self):
@@ -189,7 +174,6 @@ class PostOrderItem(object):
         """
         self._images = images
 
-
     @property
     def source_id(self):
         """
@@ -212,7 +196,6 @@ class PostOrderItem(object):
         """
         self._source_id = source_id
 
-
     @property
     def meta(self):
         """
@@ -234,7 +217,6 @@ class PostOrderItem(object):
         :type: Meta
         """
         self._meta = meta
-
 
     def to_dict(self):
         """
@@ -285,6 +267,4 @@ class PostOrderItem(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

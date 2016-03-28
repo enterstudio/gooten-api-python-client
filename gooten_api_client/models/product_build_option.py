@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -56,20 +54,12 @@ class ProductBuildOption(object):
             'spaces': 'Spaces'
         }
 
-
         self._name = None
-
         self._image_url = None
-
         self._is_default = None
-
         self._category = None
-
         self._is_partner_specific = None
-
         self._spaces = None
-
-
 
     @property
     def name(self):
@@ -93,7 +83,6 @@ class ProductBuildOption(object):
         """
         self._name = name
 
-
     @property
     def image_url(self):
         """
@@ -115,7 +104,6 @@ class ProductBuildOption(object):
         :type: str
         """
         self._image_url = image_url
-
 
     @property
     def is_default(self):
@@ -139,7 +127,6 @@ class ProductBuildOption(object):
         """
         self._is_default = is_default
 
-
     @property
     def category(self):
         """
@@ -161,7 +148,6 @@ class ProductBuildOption(object):
         :type: str
         """
         self._category = category
-
 
     @property
     def is_partner_specific(self):
@@ -185,7 +171,6 @@ class ProductBuildOption(object):
         """
         self._is_partner_specific = is_partner_specific
 
-
     @property
     def spaces(self):
         """
@@ -207,7 +192,6 @@ class ProductBuildOption(object):
         :type: list[ProductBuildInfoSpace]
         """
         self._spaces = spaces
-
 
     def to_dict(self):
         """
@@ -258,6 +242,4 @@ class ProductBuildOption(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

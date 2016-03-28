@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -72,36 +70,20 @@ class Product(object):
             'categories': 'Categories'
         }
 
-
         self._id = None
-
         self._u_id = None
-
         self._name = None
-
         self._short_description = None
-
         self._has_available_product_variants = None
-
         self._has_product_templates = None
-
         self._featured_index = None
-
         self._max_zoom = None
-
         self._retail_price = None
-
         self._info = None
-
         self._product_image = None
-
         self._price_info = None
-
         self._partner_price_info = None
-
         self._categories = None
-
-
 
     @property
     def id(self):
@@ -125,7 +107,6 @@ class Product(object):
         """
         self._id = id
 
-
     @property
     def u_id(self):
         """
@@ -147,7 +128,6 @@ class Product(object):
         :type: str
         """
         self._u_id = u_id
-
 
     @property
     def name(self):
@@ -171,7 +151,6 @@ class Product(object):
         """
         self._name = name
 
-
     @property
     def short_description(self):
         """
@@ -193,7 +172,6 @@ class Product(object):
         :type: str
         """
         self._short_description = short_description
-
 
     @property
     def has_available_product_variants(self):
@@ -217,7 +195,6 @@ class Product(object):
         """
         self._has_available_product_variants = has_available_product_variants
 
-
     @property
     def has_product_templates(self):
         """
@@ -239,7 +216,6 @@ class Product(object):
         :type: bool
         """
         self._has_product_templates = has_product_templates
-
 
     @property
     def featured_index(self):
@@ -263,7 +239,6 @@ class Product(object):
         """
         self._featured_index = featured_index
 
-
     @property
     def max_zoom(self):
         """
@@ -285,7 +260,6 @@ class Product(object):
         :type: int
         """
         self._max_zoom = max_zoom
-
 
     @property
     def retail_price(self):
@@ -309,7 +283,6 @@ class Product(object):
         """
         self._retail_price = retail_price
 
-
     @property
     def info(self):
         """
@@ -331,7 +304,6 @@ class Product(object):
         :type: list[ProductInfo]
         """
         self._info = info
-
 
     @property
     def product_image(self):
@@ -355,7 +327,6 @@ class Product(object):
         """
         self._product_image = product_image
 
-
     @property
     def price_info(self):
         """
@@ -377,7 +348,6 @@ class Product(object):
         :type: ProductPriceInfo
         """
         self._price_info = price_info
-
 
     @property
     def partner_price_info(self):
@@ -401,7 +371,6 @@ class Product(object):
         """
         self._partner_price_info = partner_price_info
 
-
     @property
     def categories(self):
         """
@@ -423,7 +392,6 @@ class Product(object):
         :type: list[Category]
         """
         self._categories = categories
-
 
     def to_dict(self):
         """
@@ -474,6 +442,4 @@ class Product(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

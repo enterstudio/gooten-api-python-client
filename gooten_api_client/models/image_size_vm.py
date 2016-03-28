@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -50,14 +48,9 @@ class ImageSizeVm(object):
             'height': 'Height'
         }
 
-
         self._space_id = None
-
         self._width = None
-
         self._height = None
-
-
 
     @property
     def space_id(self):
@@ -81,7 +74,6 @@ class ImageSizeVm(object):
         """
         self._space_id = space_id
 
-
     @property
     def width(self):
         """
@@ -104,7 +96,6 @@ class ImageSizeVm(object):
         """
         self._width = width
 
-
     @property
     def height(self):
         """
@@ -126,7 +117,6 @@ class ImageSizeVm(object):
         :type: int
         """
         self._height = height
-
 
     def to_dict(self):
         """
@@ -177,6 +167,4 @@ class ImageSizeVm(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

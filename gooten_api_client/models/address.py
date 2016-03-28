@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -54,18 +52,11 @@ class Address(object):
             'street_lines': 'StreetLines'
         }
 
-
         self._city = None
-
         self._country_code = None
-
         self._postal_code = None
-
         self._state_or_province_code = None
-
         self._street_lines = None
-
-
 
     @property
     def city(self):
@@ -89,7 +80,6 @@ class Address(object):
         """
         self._city = city
 
-
     @property
     def country_code(self):
         """
@@ -111,7 +101,6 @@ class Address(object):
         :type: str
         """
         self._country_code = country_code
-
 
     @property
     def postal_code(self):
@@ -135,7 +124,6 @@ class Address(object):
         """
         self._postal_code = postal_code
 
-
     @property
     def state_or_province_code(self):
         """
@@ -158,7 +146,6 @@ class Address(object):
         """
         self._state_or_province_code = state_or_province_code
 
-
     @property
     def street_lines(self):
         """
@@ -180,7 +167,6 @@ class Address(object):
         :type: list[str]
         """
         self._street_lines = street_lines
-
 
     def to_dict(self):
         """
@@ -231,6 +217,4 @@ class Address(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -46,10 +44,7 @@ class PaymentValidationResponse(object):
             'is_valid': 'IsValid'
         }
 
-
         self._is_valid = None
-
-
 
     @property
     def is_valid(self):
@@ -72,7 +67,6 @@ class PaymentValidationResponse(object):
         :type: bool
         """
         self._is_valid = is_valid
-
 
     def to_dict(self):
         """
@@ -123,6 +117,4 @@ class PaymentValidationResponse(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

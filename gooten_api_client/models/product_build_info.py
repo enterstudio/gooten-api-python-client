@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -76,40 +74,22 @@ class ProductBuildInfo(object):
             'default_text': 'DefaultText'
         }
 
-
         self._id = None
-
         self._description = None
-
         self._type = None
-
         self._z_index = None
-
         self._x1 = None
-
         self._x2 = None
-
         self._y1 = None
-
         self._y2 = None
-
         self._color = None
-
         self._background_image_url = None
-
         self._overlay_image_url = None
-
         self._font_name = None
-
         self._font_size = None
-
         self._font_h_alignment = None
-
         self._font_v_alighment = None
-
         self._default_text = None
-
-
 
     @property
     def id(self):
@@ -133,7 +113,6 @@ class ProductBuildInfo(object):
         """
         self._id = id
 
-
     @property
     def description(self):
         """
@@ -155,7 +134,6 @@ class ProductBuildInfo(object):
         :type: str
         """
         self._description = description
-
 
     @property
     def type(self):
@@ -179,7 +157,6 @@ class ProductBuildInfo(object):
         """
         self._type = type
 
-
     @property
     def z_index(self):
         """
@@ -201,7 +178,6 @@ class ProductBuildInfo(object):
         :type: int
         """
         self._z_index = z_index
-
 
     @property
     def x1(self):
@@ -225,7 +201,6 @@ class ProductBuildInfo(object):
         """
         self._x1 = x1
 
-
     @property
     def x2(self):
         """
@@ -247,7 +222,6 @@ class ProductBuildInfo(object):
         :type: int
         """
         self._x2 = x2
-
 
     @property
     def y1(self):
@@ -271,7 +245,6 @@ class ProductBuildInfo(object):
         """
         self._y1 = y1
 
-
     @property
     def y2(self):
         """
@@ -293,7 +266,6 @@ class ProductBuildInfo(object):
         :type: int
         """
         self._y2 = y2
-
 
     @property
     def color(self):
@@ -317,7 +289,6 @@ class ProductBuildInfo(object):
         """
         self._color = color
 
-
     @property
     def background_image_url(self):
         """
@@ -339,7 +310,6 @@ class ProductBuildInfo(object):
         :type: str
         """
         self._background_image_url = background_image_url
-
 
     @property
     def overlay_image_url(self):
@@ -363,7 +333,6 @@ class ProductBuildInfo(object):
         """
         self._overlay_image_url = overlay_image_url
 
-
     @property
     def font_name(self):
         """
@@ -385,7 +354,6 @@ class ProductBuildInfo(object):
         :type: str
         """
         self._font_name = font_name
-
 
     @property
     def font_size(self):
@@ -409,7 +377,6 @@ class ProductBuildInfo(object):
         """
         self._font_size = font_size
 
-
     @property
     def font_h_alignment(self):
         """
@@ -431,7 +398,6 @@ class ProductBuildInfo(object):
         :type: str
         """
         self._font_h_alignment = font_h_alignment
-
 
     @property
     def font_v_alighment(self):
@@ -455,7 +421,6 @@ class ProductBuildInfo(object):
         """
         self._font_v_alighment = font_v_alighment
 
-
     @property
     def default_text(self):
         """
@@ -477,7 +442,6 @@ class ProductBuildInfo(object):
         :type: str
         """
         self._default_text = default_text
-
 
     def to_dict(self):
         """
@@ -528,6 +492,4 @@ class ProductBuildInfo(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

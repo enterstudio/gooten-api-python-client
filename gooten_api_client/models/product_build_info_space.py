@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -54,18 +52,11 @@ class ProductBuildInfoSpace(object):
             'layers': 'Layers'
         }
 
-
         self._id = None
-
         self._description = None
-
         self._index = None
-
         self._default_rotation = None
-
         self._layers = None
-
-
 
     @property
     def id(self):
@@ -89,7 +80,6 @@ class ProductBuildInfoSpace(object):
         """
         self._id = id
 
-
     @property
     def description(self):
         """
@@ -111,7 +101,6 @@ class ProductBuildInfoSpace(object):
         :type: str
         """
         self._description = description
-
 
     @property
     def index(self):
@@ -135,7 +124,6 @@ class ProductBuildInfoSpace(object):
         """
         self._index = index
 
-
     @property
     def default_rotation(self):
         """
@@ -158,7 +146,6 @@ class ProductBuildInfoSpace(object):
         """
         self._default_rotation = default_rotation
 
-
     @property
     def layers(self):
         """
@@ -180,7 +167,6 @@ class ProductBuildInfoSpace(object):
         :type: list[ProductBuildInfo]
         """
         self._layers = layers
-
 
     def to_dict(self):
         """
@@ -231,6 +217,4 @@ class ProductBuildInfoSpace(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

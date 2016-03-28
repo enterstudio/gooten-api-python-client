@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -48,12 +46,8 @@ class ImageValidatorResult(object):
             'issues': 'Issues'
         }
 
-
         self._had_error = None
-
         self._issues = None
-
-
 
     @property
     def had_error(self):
@@ -77,7 +71,6 @@ class ImageValidatorResult(object):
         """
         self._had_error = had_error
 
-
     @property
     def issues(self):
         """
@@ -99,7 +92,6 @@ class ImageValidatorResult(object):
         :type: list[ValidationFailure]
         """
         self._issues = issues
-
 
     def to_dict(self):
         """
@@ -150,6 +142,4 @@ class ImageValidatorResult(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

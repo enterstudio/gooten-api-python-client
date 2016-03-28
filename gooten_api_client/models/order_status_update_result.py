@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -46,10 +44,7 @@ class OrderStatusUpdateResult(object):
             'had_error': 'HadError'
         }
 
-
         self._had_error = None
-
-
 
     @property
     def had_error(self):
@@ -72,7 +67,6 @@ class OrderStatusUpdateResult(object):
         :type: bool
         """
         self._had_error = had_error
-
 
     def to_dict(self):
         """
@@ -123,6 +117,4 @@ class OrderStatusUpdateResult(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

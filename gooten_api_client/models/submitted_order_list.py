@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -52,16 +50,10 @@ class SubmittedOrderList(object):
             'had_error': 'HadError'
         }
 
-
         self._orders = None
-
         self._total_pages = None
-
         self._page = None
-
         self._had_error = None
-
-
 
     @property
     def orders(self):
@@ -85,7 +77,6 @@ class SubmittedOrderList(object):
         """
         self._orders = orders
 
-
     @property
     def total_pages(self):
         """
@@ -107,7 +98,6 @@ class SubmittedOrderList(object):
         :type: int
         """
         self._total_pages = total_pages
-
 
     @property
     def page(self):
@@ -131,7 +121,6 @@ class SubmittedOrderList(object):
         """
         self._page = page
 
-
     @property
     def had_error(self):
         """
@@ -153,7 +142,6 @@ class SubmittedOrderList(object):
         :type: bool
         """
         self._had_error = had_error
-
 
     def to_dict(self):
         """
@@ -204,6 +192,4 @@ class SubmittedOrderList(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

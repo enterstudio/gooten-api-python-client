@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -56,20 +54,12 @@ class ProductVariant(object):
             'partner_price_info': 'PartnerPriceInfo'
         }
 
-
         self._sku = None
-
         self._max_images = None
-
         self._has_templates = None
-
         self._options = None
-
         self._price_info = None
-
         self._partner_price_info = None
-
-
 
     @property
     def sku(self):
@@ -93,7 +83,6 @@ class ProductVariant(object):
         """
         self._sku = sku
 
-
     @property
     def max_images(self):
         """
@@ -115,7 +104,6 @@ class ProductVariant(object):
         :type: int
         """
         self._max_images = max_images
-
 
     @property
     def has_templates(self):
@@ -139,7 +127,6 @@ class ProductVariant(object):
         """
         self._has_templates = has_templates
 
-
     @property
     def options(self):
         """
@@ -161,7 +148,6 @@ class ProductVariant(object):
         :type: list[ProductOption]
         """
         self._options = options
-
 
     @property
     def price_info(self):
@@ -185,7 +171,6 @@ class ProductVariant(object):
         """
         self._price_info = price_info
 
-
     @property
     def partner_price_info(self):
         """
@@ -207,7 +192,6 @@ class ProductVariant(object):
         :type: ProductPriceInfo
         """
         self._partner_price_info = partner_price_info
-
 
     def to_dict(self):
         """
@@ -258,6 +242,4 @@ class ProductVariant(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

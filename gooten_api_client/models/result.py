@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -52,16 +50,10 @@ class Result(object):
             'proposed_address': 'ProposedAddress'
         }
 
-
         self._is_valid = None
-
         self._reason = None
-
         self._score = None
-
         self._proposed_address = None
-
-
 
     @property
     def is_valid(self):
@@ -85,7 +77,6 @@ class Result(object):
         """
         self._is_valid = is_valid
 
-
     @property
     def reason(self):
         """
@@ -107,7 +98,6 @@ class Result(object):
         :type: str
         """
         self._reason = reason
-
 
     @property
     def score(self):
@@ -131,7 +121,6 @@ class Result(object):
         """
         self._score = score
 
-
     @property
     def proposed_address(self):
         """
@@ -153,7 +142,6 @@ class Result(object):
         :type: Address
         """
         self._proposed_address = proposed_address
-
 
     def to_dict(self):
         """
@@ -204,6 +192,4 @@ class Result(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -50,14 +48,9 @@ class ProductOptionValueSettings(object):
             'color_rgba': 'ColorRgba'
         }
 
-
         self._icon_url = None
-
         self._icon_type = None
-
         self._color_rgba = None
-
-
 
     @property
     def icon_url(self):
@@ -81,7 +74,6 @@ class ProductOptionValueSettings(object):
         """
         self._icon_url = icon_url
 
-
     @property
     def icon_type(self):
         """
@@ -104,7 +96,6 @@ class ProductOptionValueSettings(object):
         """
         self._icon_type = icon_type
 
-
     @property
     def color_rgba(self):
         """
@@ -126,7 +117,6 @@ class ProductOptionValueSettings(object):
         :type: str
         """
         self._color_rgba = color_rgba
-
 
     def to_dict(self):
         """
@@ -177,6 +167,4 @@ class ProductOptionValueSettings(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

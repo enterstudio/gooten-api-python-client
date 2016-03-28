@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -48,12 +46,8 @@ class Category(object):
             'name': 'Name'
         }
 
-
         self._id = None
-
         self._name = None
-
-
 
     @property
     def id(self):
@@ -77,7 +71,6 @@ class Category(object):
         """
         self._id = id
 
-
     @property
     def name(self):
         """
@@ -99,7 +92,6 @@ class Category(object):
         :type: str
         """
         self._name = name
-
 
     def to_dict(self):
         """
@@ -150,6 +142,4 @@ class Category(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -54,18 +52,11 @@ class ShipEstimate(object):
             'est_ship_days': 'EstShipDays'
         }
 
-
         self._min_price = None
-
         self._max_price = None
-
         self._vendor_country_code = None
-
         self._can_ship_expedited = None
-
         self._est_ship_days = None
-
-
 
     @property
     def min_price(self):
@@ -89,7 +80,6 @@ class ShipEstimate(object):
         """
         self._min_price = min_price
 
-
     @property
     def max_price(self):
         """
@@ -111,7 +101,6 @@ class ShipEstimate(object):
         :type: ShipPrice
         """
         self._max_price = max_price
-
 
     @property
     def vendor_country_code(self):
@@ -135,7 +124,6 @@ class ShipEstimate(object):
         """
         self._vendor_country_code = vendor_country_code
 
-
     @property
     def can_ship_expedited(self):
         """
@@ -158,7 +146,6 @@ class ShipEstimate(object):
         """
         self._can_ship_expedited = can_ship_expedited
 
-
     @property
     def est_ship_days(self):
         """
@@ -180,7 +167,6 @@ class ShipEstimate(object):
         :type: int
         """
         self._est_ship_days = est_ship_days
-
 
     def to_dict(self):
         """
@@ -231,6 +217,4 @@ class ShipEstimate(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

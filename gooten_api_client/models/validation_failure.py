@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -50,14 +48,9 @@ class ValidationFailure(object):
             'attempted_value': 'AttemptedValue'
         }
 
-
         self._property_name = None
-
         self._error_message = None
-
         self._attempted_value = None
-
-
 
     @property
     def property_name(self):
@@ -81,7 +74,6 @@ class ValidationFailure(object):
         """
         self._property_name = property_name
 
-
     @property
     def error_message(self):
         """
@@ -104,7 +96,6 @@ class ValidationFailure(object):
         """
         self._error_message = error_message
 
-
     @property
     def attempted_value(self):
         """
@@ -126,7 +117,6 @@ class ValidationFailure(object):
         :type: str
         """
         self._attempted_value = attempted_value
-
 
     def to_dict(self):
         """
@@ -177,6 +167,4 @@ class ValidationFailure(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

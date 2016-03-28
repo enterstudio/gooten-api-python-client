@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -66,30 +64,17 @@ class ShipToAddress(object):
             'email': 'Email'
         }
 
-
         self._first_name = None
-
         self._last_name = None
-
         self._line1 = None
-
         self._line2 = None
-
         self._city = None
-
         self._state = None
-
         self._country_code = None
-
         self._postal_code = None
-
         self._is_business_address = None
-
         self._phone = None
-
         self._email = None
-
-
 
     @property
     def first_name(self):
@@ -113,7 +98,6 @@ class ShipToAddress(object):
         """
         self._first_name = first_name
 
-
     @property
     def last_name(self):
         """
@@ -135,7 +119,6 @@ class ShipToAddress(object):
         :type: str
         """
         self._last_name = last_name
-
 
     @property
     def line1(self):
@@ -159,7 +142,6 @@ class ShipToAddress(object):
         """
         self._line1 = line1
 
-
     @property
     def line2(self):
         """
@@ -181,7 +163,6 @@ class ShipToAddress(object):
         :type: str
         """
         self._line2 = line2
-
 
     @property
     def city(self):
@@ -205,7 +186,6 @@ class ShipToAddress(object):
         """
         self._city = city
 
-
     @property
     def state(self):
         """
@@ -227,7 +207,6 @@ class ShipToAddress(object):
         :type: str
         """
         self._state = state
-
 
     @property
     def country_code(self):
@@ -251,7 +230,6 @@ class ShipToAddress(object):
         """
         self._country_code = country_code
 
-
     @property
     def postal_code(self):
         """
@@ -273,7 +251,6 @@ class ShipToAddress(object):
         :type: str
         """
         self._postal_code = postal_code
-
 
     @property
     def is_business_address(self):
@@ -297,7 +274,6 @@ class ShipToAddress(object):
         """
         self._is_business_address = is_business_address
 
-
     @property
     def phone(self):
         """
@@ -320,7 +296,6 @@ class ShipToAddress(object):
         """
         self._phone = phone
 
-
     @property
     def email(self):
         """
@@ -342,7 +317,6 @@ class ShipToAddress(object):
         :type: str
         """
         self._email = email
-
 
     def to_dict(self):
         """
@@ -393,6 +367,4 @@ class ShipToAddress(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 

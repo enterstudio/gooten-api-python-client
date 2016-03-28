@@ -18,8 +18,6 @@ Copyright 2016 SmartBear Software
     Ref: https://github.com/swagger-api/swagger-codegen
 """
 
-
-
 from pprint import pformat
 from six import iteritems
 
@@ -56,20 +54,12 @@ class ShippingPricesRequest(object):
             'items': 'Items'
         }
 
-
         self._ship_to_postal_code = None
-
         self._ship_to_country = None
-
         self._ship_to_state = None
-
         self._currency_code = None
-
         self._language_code = None
-
         self._items = None
-
-
 
     @property
     def ship_to_postal_code(self):
@@ -93,7 +83,6 @@ class ShippingPricesRequest(object):
         """
         self._ship_to_postal_code = ship_to_postal_code
 
-
     @property
     def ship_to_country(self):
         """
@@ -115,7 +104,6 @@ class ShippingPricesRequest(object):
         :type: str
         """
         self._ship_to_country = ship_to_country
-
 
     @property
     def ship_to_state(self):
@@ -139,7 +127,6 @@ class ShippingPricesRequest(object):
         """
         self._ship_to_state = ship_to_state
 
-
     @property
     def currency_code(self):
         """
@@ -161,7 +148,6 @@ class ShippingPricesRequest(object):
         :type: str
         """
         self._currency_code = currency_code
-
 
     @property
     def language_code(self):
@@ -185,7 +171,6 @@ class ShippingPricesRequest(object):
         """
         self._language_code = language_code
 
-
     @property
     def items(self):
         """
@@ -207,7 +192,6 @@ class ShippingPricesRequest(object):
         :type: list[SkuQuantityPair]
         """
         self._items = items
-
 
     def to_dict(self):
         """
@@ -258,6 +242,4 @@ class ShippingPricesRequest(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
-
 
