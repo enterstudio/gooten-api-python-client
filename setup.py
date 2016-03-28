@@ -3,7 +3,7 @@
 import sys
 from setuptools import setup, find_packages
 
-NAME = "swagger_client"
+NAME = "gooten_api_client"
 VERSION = "1.0.0"
 
 
@@ -20,15 +20,15 @@ REQUIRES = ["urllib3 >= 1.10", "six >= 1.9", "certifi", "python-dateutil"]
 setup(
     name=NAME,
     version=VERSION,
-    description="",
+    description="Gooten API",
     author_email="",
     url="",
-    keywords=["Swagger", ""],
+    keywords=["Swagger", "Gooten API"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
     long_description="""\
-    
+    An overview of the various API methods that Gooten offers, including examples of each.
     """
 )
 
